@@ -37,3 +37,6 @@ def Logout(request):
     logout(request);
 
     return HttpResponseRedirect("/");
+
+def Review(request):
+    return render(request,"Students/reviews.html");
