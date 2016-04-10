@@ -80,3 +80,7 @@ a{
 .active:hover{
     background-color: #90DA26;
 }
+
+.container{
+    padding-top: 150px;
+}
