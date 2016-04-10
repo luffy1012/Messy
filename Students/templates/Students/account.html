@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Account-Profile View </title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}"></link>
+    	<link rel="stylesheet" type="text/css" href="{% static 'css/account.css' %}"></link>
+	</head>
+    <body>
+         <div id="align">
+             <div id="left">
+                 <a href="/home">
+                    <div class="button">Home</div></a>
+                <a href="account.html">
+                     <div class="button active">Account</div></a>
+                 <a href="reviews.htm">
+                 <div class="button">Reviews</div></a>
+                 <a href="#">
+                 <div class="button">Menu</div></a>
+             </div>
+        <div id="right">
+                 <a href="notifications.htm">
+                     <div class="button">Notifications</div></a>
+                 
+                 <a href="login1.htm">
+                     <div class="button">Log Out</div></a>
+             </div>
+         </div>
+		 <img src="{{user.pic.url}}"/>
+		 <h1 id="detail"> NAME: </h1>
+		 <h1 style="color: red"> {{user.name}} </h1>
+		 <h1 id="detail1"> ENTRY NO. :</h1>
+		 <h1 style="color: Blue"> {{user.entry_num}}</h1>
+		 <h1 id="detail2"> ACCOUNT DETAILS :- </h1>
+		 <h1 id="expenditure">Expenditure Done   = Rs.  </h1>
+		 <h1 id="expenditure1">{{user.expend}}</h1>
+    </body>
+</html>
+
+

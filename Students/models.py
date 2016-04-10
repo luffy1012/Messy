@@ -8,6 +8,7 @@ class Student (models.Model):
     name = models.CharField(max_length = 50)
     entry_num = models.CharField(max_length =11)
     pic = models.ImageField(upload_to="static/img/profile_pics",blank=True)
+    expend = models.PositiveIntegerField()
     def __str__(self):
         return self.user.username
 

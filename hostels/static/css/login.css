@@ -1,0 +1,30 @@
+body{
+    overflow: hidden;
+}
+#main{
+    background: url("https://image.freepik.com/free-vector/dark-metal-background_1048-1026.jpg");
+    margin: auto;
+    margin-bottom: 100px;
+    height: 100px;
+}
+#heading{
+    position: relative;
+    display: inline;
+    text-align: center;
+     left: 40%;
+    color: white;
+    padding: auto;
+    margin: auto;
+}
+img{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
