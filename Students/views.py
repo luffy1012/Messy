@@ -32,3 +32,8 @@ def Account(request):
     if request.user.is_authenticated():
         usr = Student.objects.get(user=request.user)
         return render(request,"Students/account.html",{'user':usr})
+
+def Logout(request):
+    logout(request);
+
+    return HttpResponseRedirect("/");

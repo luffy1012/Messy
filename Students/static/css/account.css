@@ -46,6 +46,3 @@ h1{
   top: -180px;
   left: 370px;
   display: inline-block;}
-body {
-    background: url("{% static 'img/02.jpg' %}");
-}
