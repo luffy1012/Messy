@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="menu.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="panel-group" id="accordion">
+
+
+    {% for hostel in hostels %}
+    <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#{{hostel.name}}">
+        <div class="panel-heading">
+        <h4 class="panel-title">
+      {{hostel.name}}
+        </h4>
+      </a>
+      </div>
+      <div id="{{hostel.name}}" class="panel-collapse collapse">
+        <div class="container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Lunch</th>
+                <th>Dinner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="info">
+                <td>Mon</td>
+                <td>{{hostel.day_1_day}}</td>
+                <td>{{hostel.day_1_night}}</td>
+              </tr>
+              <tr class="success">
+                <td>Tue</td>
+                <td>{{hostel.day_2_day}}</td>
+                <td>{{hostel.day_2_night}}</td>
+              </tr>
+              <tr class="info">
+                <td>Wed</td>
+                <td>{{hostel.day_3_day}}</td>
+                <td>{{hostel.day_3_night}}</td>
+              </tr>          
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+      {% endfor %}
+    </div>
+</div>
+    
+</body>
+</html>
